@@ -18,7 +18,6 @@ public class RedZone : MonoBehaviour
         {
             if(!cube.isMainCube && cube.cubeRigidbody.velocity.magnitude < 0.1f)
             {
-                Debug.Log("Game Over");
                 gameOverPanel.SetActive(true);
                 GameObject.Find("Touch Slider").GetComponent<TouchSlider>().enabled = false; // touch slider scripti deaktif oluyor.
             }
